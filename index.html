@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title> My Family Book </title>
+    <script>
+        var images = 
+        ["https://thumbs.dreamstime.com/b/happy-cute-kid-boy-mom-dad-170241519.jpg", "https://thumbs.dreamstime.com/b/boy-singing-dancing-lovely-kid-having-fun-enjoying-listening-to-music-cartoon-vector-illustration-boy-singing-dancing-166161255.jpg",
+        "https://previews.123rf.com/images/dedmazay/dedmazay1602/dedmazay160200015/52020512-cartoon-dad-dancing-on-a-white-background-vector-illustration.jpg","https://previews.123rf.com/images/kennykiernanillustration/kennykiernanillustration1801/kennykiernanillustration180100030/92602547-strong-independent-woman-stay-at-home-single-mom-sahm-mother-.jpg"];
+        
+        var names = ["Family Book","Aarush Mann","Sudhir Mann","Pinki Mann"];
+        
+        var i = 0;
+        function update()
+        {
+            i++;
+            var number_of_family_members_in_arry = 3
+            if(i>number_of_family_members_in_arry )
+            {
+                i=0;
+            }
+            var updateImage = images[i];
+            var updateName = names[i];
+            document.getElementById("family_members").src =updateImage;
+            document.getElementById("family_members_name").innerHTML = updateName;
+        }
+        
+        
+        </script>
+        </head>
+    <body>
+    <h1> My Family Book </h1>
+<img src="https://thumbs.dreamstime.com/b/happy-cute-kid-boy-mom-dad-170241519.jpg" style="width: 30%;" id="family_members">
+<h4 id="family_members_name"></h4>
+<button onclick= "update();">Next</button>
+    </body>
+
+</html>
+
+
